@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class LineComparison {
 
-
     /**
      * x1 and y1 are the coordinates of point 1
      * x2 and y2 are the coordinates of point 2
