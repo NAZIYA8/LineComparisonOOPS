@@ -13,27 +13,31 @@ public class LineComparison {
      * check if line 1 and line 2 are equal
      * Compare if distances are Equal ,Greater or less using compareTo method
      */
-    public static void main(String[] args) {
-        int x1, x2, y1, y2, a1, a2, b1, b2;
-        Double distance1, distance2;
-        Scanner scan = new Scanner(System.in);
+    public static Double distance1, distance2;
 
+    public static void main(String[] args) {
+        compareTo();
+    }
+
+    public static void compareTo() {
+
+        Scanner scan = new Scanner(System.in);
         System.out.println("Enter the point x1 ");
-        x1 = scan.nextInt();
+        int x1 = scan.nextInt();
         System.out.println("Enter the point y1 ");
-        y1 = scan.nextInt();
+        int y1 = scan.nextInt();
         System.out.println("Enter the point x2 ");
-        x2 = scan.nextInt();
+        int x2 = scan.nextInt();
         System.out.println("Enter the point y2 ");
-        y2 = scan.nextInt();
+        int y2 = scan.nextInt();
         System.out.println("Enter the point a1 ");
-        a1 = scan.nextInt();
+        int a1 = scan.nextInt();
         System.out.println("Enter the point b1 ");
-        b1 = scan.nextInt();
+        int b1 = scan.nextInt();
         System.out.println("Enter the point a2 ");
-        a2 = scan.nextInt();
+        int a2 = scan.nextInt();
         System.out.println("Enter the point b2 ");
-        b2 = scan.nextInt();
+        int b2 = scan.nextInt();
 
         distance1 = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
         distance2 = Math.sqrt((a2 - a1) * (a2 - a1) + (b2 - b1) * (b2 - b1));
@@ -52,3 +56,5 @@ public class LineComparison {
         }
     }
 }
+
+
